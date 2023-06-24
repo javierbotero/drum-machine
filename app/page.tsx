@@ -1,10 +1,10 @@
 /* Components */
-import { Counter } from './components/Counter/Counter'
+import { Drum } from './components/Drum/Drum';
 
 export default function IndexPage() {
-  return <Counter />
+  return <Drum />
 }
 
 export const metadata = {
-  title: 'Redux Toolkit',
+  title: 'Drum Machine',
 }

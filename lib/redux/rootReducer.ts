@@ -1,6 +1,7 @@
 /* Instruments */
-import { counterSlice } from './slices'
+import { keySlice, keysSlice } from './slices'
 
 export const reducer = {
-  counter: counterSlice.reducer,
+  key: keySlice.reducer,
+  keys: keysSlice.reducer
 }
