@@ -29,4 +29,13 @@ describe('Counter', () => {
 
     expect(display.innerHTML).toBe('Heater-1');
   });
+
+  it('press Q key and plays the audio', () => {
+    renderWithProviders(<Drum />);
+    HTMLAudioElement.prototype.play = jest.fn();
+
+    fireEvent.keyDown(document, { key: 'q', code: 'KeyQ' });
+    const display = screen.getByTestId('display');
+    expect(display.innerHTML).toBe('Heater-1');
+  });
 });
