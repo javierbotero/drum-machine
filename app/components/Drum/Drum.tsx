@@ -55,7 +55,7 @@ export const Drum = () => {
       <div className="h-14 text-slate-100 bg-gradient-to-b from-cyan-950 via-cyan-800 to-from-cyan-950 flex items-center justify-center" data-testid="display" id="display">
         {currentKey}
       </div>
-      <div className="grid grid-cols-3 h-full">
+      <div className="grid grid-cols-3 h-full gap-2">
         {urlsToKeys(keys)}
       </div>
     </div>

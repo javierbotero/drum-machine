@@ -18,7 +18,7 @@ const Key = ({ letter, audio, id }: KeyType) => {
 
   return (
     <button
-      className="drum-pad w-full transition bg-cyan-800 text-slate-100 border-2 border-cyan-300"
+      className="drum-pad w-full transition bg-cyan-800 text-slate-100 border-2 border-cyan-300 rounded"
       id={id}
       data-testid="drum-pad"
       onClick={handleClick}
