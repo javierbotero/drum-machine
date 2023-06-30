@@ -1,8 +1,8 @@
 import React from 'react';
 import { screen, fireEvent } from '@testing-library/react';
 import { Drum } from '@/app/components/Drum/Drum';
-import { Providers } from '@/lib/providers';
 import { renderWithProviders } from './utils/test-utils';
+import '@testing-library/jest-dom';
 
 describe('Counter', () => {
   it('displays a div with id="drum-machine"', () => {
@@ -36,6 +36,7 @@ describe('Counter', () => {
 
     fireEvent.keyDown(document, { key: 'q', code: 'KeyQ' });
     const display = screen.getByTestId('display');
+
     expect(display.innerHTML).toBe('Heater-1');
   });
 });
